@@ -47,4 +47,11 @@ public class TaskService {
             throw new RuntimeException("Task not found");
         }
     }
+
+    public List<Task> getFavoriteTasks() {
+        return taskRepository.findByFavoriteTrue();
+    }
+
+
+
 }
