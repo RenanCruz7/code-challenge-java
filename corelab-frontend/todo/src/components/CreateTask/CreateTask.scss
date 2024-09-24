@@ -1,0 +1,62 @@
+.new-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    padding-top: 50px; /* Ajusta a distância do topo */
+    height: calc(100vh - 120px); /* Reduz a altura disponível para o contêiner */
+    background-color: #f8f9fa;
+
+    .box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .input {
+                font-size: 18px;
+                border: none;
+                outline: none;
+                width: calc(100% - 40px); /* Ajuste a largura do input */
+                height: 100%;
+                border-radius: 10px;
+                padding: 0.4em;
+                color: black;
+            }
+
+            .favorite {
+                border: none;
+                background-color: inherit;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #ddd;
+
+                &.favorite {
+                    color: gold;
+                }
+            }
+        }
+
+        .task-description {
+            .description-text {
+                border: none;
+                outline: none;
+                font-size: 16px;
+                resize: none;
+                height: 100%;
+                width: 100%; /* Ajuste a largura do textarea */
+                max-width: 100%; /* Garante que o textarea não ultrapasse a largura da box */
+                border-radius: 10px;
+                padding: 0.4em;
+                color: black;
+            }
+        }
+    }
+}
