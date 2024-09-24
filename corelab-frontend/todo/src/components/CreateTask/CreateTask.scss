@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo no topo */
     padding-top: 50px; /* Ajusta a distância do topo */
-    height: calc(100vh - 120px); /* Reduz a altura disponível para o contêiner */
-    background-color: #f8f9fa;
+    height: 300px;
 
     .box {
         background: #fff;
-        padding: 20px;
+        padding: 10px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 100%;

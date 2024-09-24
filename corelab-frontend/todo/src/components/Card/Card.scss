@@ -1,0 +1,55 @@
+.card {
+    width: 390px;
+    height: 437px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+
+        .card-title {
+            font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+            margin: 0;
+            flex: 1;
+            border: none;
+            outline: none;
+            background: none;
+            padding: 0;
+        }
+
+        .favorite-button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #ddd;
+
+            &.favorite {
+                color: gold;
+            }
+        }
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 10px 0; /* Ajusta a margem */
+    }
+
+    .card-description {
+        font-size: 1rem;
+        color: #333;
+        flex: 1;
+        border: none;
+        outline: none;
+        resize: none;
+        background: none;
+    }
+}
